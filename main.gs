@@ -9,7 +9,7 @@ function randomPost(){
   }
 }
 
-function uploadImageToSlack(image,option){
+function uploadImage(image,option){
   var slackApp = SlackApp.create(SLACK_API_TOKEN);
   
   var result = slackApp.filesUpload(image, option)  
